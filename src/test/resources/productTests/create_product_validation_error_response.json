@@ -1,0 +1,22 @@
+{
+    "title": "Expectation Failed",
+    "status": 417,
+    "errors": [
+        {
+            "field": "description",
+            "code": "Length"
+        },
+        {
+            "field": "sku",
+            "code": "Pattern"
+        },
+        {
+            "field": "name",
+            "code": "Length"
+        },
+        {
+            "field": "price",
+            "code": "Min"
+        }
+    ]
+}

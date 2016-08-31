@@ -1,0 +1,10 @@
+{
+    "title": "Expectation Failed",
+    "status": 417,
+    "errors": [
+        {
+            "field": "count",
+            "code": "Min"
+        }
+    ]
+}

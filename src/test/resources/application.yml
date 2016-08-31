@@ -1,0 +1,24 @@
+management.security.enabled: false
+security.basic.enabled: false
+
+server:
+  port: 9500
+  contextPath: /retail
+
+
+dbhost: localhost
+
+spring:
+  cloud:
+    discovery:
+      enabled: false
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+  datasource:
+    url: jdbc:mysql://${dbhost}:3306/retail_test?tinyInt1isBit=false
+    username: root
+    password: mysql
+    driver-class-name: com.mysql.jdbc.Driver
+

@@ -1,0 +1,22 @@
+{
+    "title": "Expectation Failed",
+    "status": 417,
+    "errors": [
+        {
+            "field": "lastName",
+            "code": "Pattern"
+        },
+        {
+            "field": "phone",
+            "code": "PhoneNumber"
+        },
+        {
+            "field": "firstName",
+            "code": "Pattern"
+        },
+        {
+            "field": "email",
+            "code": "Email"
+        }
+    ]
+}

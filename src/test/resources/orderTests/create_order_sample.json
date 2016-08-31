@@ -1,0 +1,16 @@
+{
+    "order_id": 1,
+    "store_id": 1,
+    "orderDate": "ignored",
+    "status": "ORDERED",
+    "items": [
+        {
+            "product_id": 1,
+            "count": 30
+        }
+    ],
+    "first_name": "peter",
+    "last_name": "parker",
+    "email": "peter.parker@spider.net",
+    "phone": "2134567890"
+}

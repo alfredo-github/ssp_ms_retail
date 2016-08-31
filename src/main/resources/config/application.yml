@@ -1,0 +1,49 @@
+# ATTENTION DEVELOPER:
+#
+# When this service is ready to be built and deployed along with the other microservices, the following must occur
+#
+# 1. Rename this file to "retail.yml"
+# 2. Move the file to the ssp-configuration-repo git repo under the "develop" branch
+# 3. Commit and Push the ssp-configuration-repo, startup this service to confirm it obtains its config
+# 4. Remove this comment block
+#
+
+management.security.enabled: false
+security.basic.enabled: false
+
+server:
+  port: 9500
+  contextPath: /retail
+
+
+# skipping config server and discovery in this sample
+dbhost: localhost
+
+spring:
+  profiles: dev
+  cloud:
+    discovery:
+      enabled: false
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+  datasource:
+    url: jdbc:mysql://${dbhost}:3306/retail?tinyInt1isBit=false
+    username: root
+    password: mysql
+    driver-class-name: com.mysql.jdbc.Driver
+
+oauth2:
+   resource:
+      jwt:
+         keyValue: |
+            -----BEGIN PUBLIC KEY-----
+            MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmhAyldeztFrQGG1gYKe1
+            igqPt9kpoFBzk+66m/rlqUkahwB2aAfJJIUH7iQnKkX9qNTiu1m9ux/qBSMSzHs5
+            ZwN7DLjugwUy0XDt98QTPlLLBJALLibJCz+ag+wiMBW4GF14mHGg3sDjnrc70t3j
+            ouYCZX9T6lgRxo9rH7XaCEzK7W/uPIKZLML0JtTc9cEYkYNvxkb8xPspaXtl7lHi
+            XoX7zGoUO2OOQ2gG4wiYAQt1BbuU9KrCpRPTT0m3XOgPm2yKzSx6Z3/Ev88fcpVe
+            ebku6B9cjBl/tkSSP+s1k4dB4yMrkcWXZBRVaPDp6c0nF+Rsq74R7NUrDPSPy+/D
+            qQIDAQAB
+            -----END PUBLIC KEY-----
