@@ -30,7 +30,6 @@ public class OrderService {
     @Autowired
     private ProductRepository productRepository;
 
-    @Transactional
     public OrderResult createOrder(Order orderDto) {
         OrderEntity orderEntity = convertToOrderEntity(orderDto);
         orderEntity.setOrderDate(LocalDateTime.now());
