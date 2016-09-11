@@ -1,0 +1,16 @@
+{
+    "order_id": 1,
+    "store_id": 1,
+    "orderDate": "ignored",
+    "status": "ORDERED",
+    "items": [
+        {
+            "product_id": 1,
+            "count": 30
+        }
+    ],
+    "first_name": "max len max len max len max len max len max len max len max len max len max len max len len max len max len max len max len max len len max len max len max len max len max len ",
+    "last_name": "max len max len max len max len max len max len max len max len max len max len max len len max len max len max len max len max len len max len max len max len max len max len ",
+    "email": "not an email",
+    "phone": "not a phone number"
+}

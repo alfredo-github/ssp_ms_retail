@@ -1,0 +1,16 @@
+{
+    "content": [
+        {
+            "store_id": 1,
+            "name": "stanley drill",
+            "description": "high power",
+            "sku": "skuDr",
+            "price": 12.38
+        }
+    ],
+    "total_elements": 1,
+    "total_pages": 1,
+    "total_count": 1,
+    "size": 20,
+    "current_page": 0
+}
