@@ -2,19 +2,18 @@ package com.tenx.ms.retail.order.service;
 
 import com.tenx.ms.retail.order.domain.OrderEntity;
 import com.tenx.ms.retail.order.domain.OrderItemEntity;
-import com.tenx.ms.retail.order.rest.dto.constant.OrderStatusEnum;
-import com.tenx.ms.retail.product.domain.ProductEntity;
-import com.tenx.ms.retail.store.domain.StoreEntity;
 import com.tenx.ms.retail.order.repository.OrderRepository;
-import com.tenx.ms.retail.product.repository.ProductRepository;
-import com.tenx.ms.retail.store.repository.StoreRepository;
 import com.tenx.ms.retail.order.rest.dto.Order;
 import com.tenx.ms.retail.order.rest.dto.OrderItem;
 import com.tenx.ms.retail.order.rest.dto.OrderResult;
+import com.tenx.ms.retail.order.rest.dto.constant.OrderStatusEnum;
+import com.tenx.ms.retail.product.domain.ProductEntity;
+import com.tenx.ms.retail.product.repository.ProductRepository;
+import com.tenx.ms.retail.store.domain.StoreEntity;
+import com.tenx.ms.retail.store.repository.StoreRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
 import java.time.LocalDateTime;
 import java.util.stream.Collectors;
 

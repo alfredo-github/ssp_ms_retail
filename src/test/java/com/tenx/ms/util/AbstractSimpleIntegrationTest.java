@@ -54,7 +54,7 @@ public abstract class AbstractSimpleIntegrationTest extends AbstractIntegrationT
             executeAndCheck(HttpMethod.POST, url, new Resource(payload), expectedStatus, null);
             fail("failure expected, got success");
         } catch (HttpClientErrorException e) {
-            assertEquals("Expected status mismatch", e.getStatusCode(), expectedStatus);
+            assertEquals("Expected status mismatch", expectedStatus, e.getStatusCode());
             compareResponses(new Resource(expectedResponse), e.getResponseBodyAsString());
         }
     }
